@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <img src="images/wb-logo-spring.png" alt="" />
+        <div class="search-wrapper">
+          <input class="search" type="text" placeholder="Поиск…" />
+          <div class="search-result"></div>
+        </div>
+        <button class="header__bth">
+          Корзина
+          <span class="header__quantity">0</span>
+        </button>
+      </div>
+      <div class="basket-container">
+        <h1>Корзина</h1>
+        <button class="basket-container__deleteAll">Очистить корзину</button>
+        <div class="basket-list" data-simplebar ></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="slideshow__container">
+        <div class="slides">
+          <img src="images/big_boom_2202466674859.jpg" />
+        </div>
+        <div class="slides">
+          <img src="images/big_vesna_15_2_23.jpg" />
+        </div>
+
+        <div class="slides">
+          <img src="images/big_8_marta_2702_new484859.jpg" />
+        </div>
+
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <button class="dot" onclick="currentSlide(1)"></button>
+        <button class="dot" onclick="currentSlide(2)"></button>
+        <button class="dot" onclick="currentSlide(3)"></button>
+      </div>
+
+      <div class="recommendation">
+        <h2>Хиты продаж</h2>
+      </div>
+
+      <section class="products">
+        
+      </section>
+    </main>
+    <div class="modal">
+      <button class="modal__close">✖</button>
+      <div class="modal__content"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
